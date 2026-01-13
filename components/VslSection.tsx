@@ -15,7 +15,7 @@ export const VslSection: React.FC = () => {
         {/* Video Wrapper */}
         <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl bg-slate-900 group border border-slate-200">
           <iframe
-            src={VSL_VIDEO_URL}
+            src={`${VSL_VIDEO_URL}?modestbranding=1&rel=0&iv_load_policy=3&controls=1&showinfo=0`}
             title="VSL - Demonstração da Atualização EA FC"
             className="w-full h-full border-0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
