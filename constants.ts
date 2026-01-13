@@ -23,7 +23,7 @@ export const CHECKOUT_LINK = "https://wa.me/5511999999999?text=Olá!%20Quero%20a
 export const GAME_VERSIONS = [
   {
     id: 'ps5',
-    name: 'PlayStation 5',
+    name: 'PS5, PS4, Xbox X|S / One',
     image: 'https://iili.io/fvDgurN.png',
     versions: [
       {
@@ -41,7 +41,7 @@ export const GAME_VERSIONS = [
     ],
   },
   {
-    id: 'ps4',
+    id: 'PS5, PS4, Xbox X|S / One',
     name: 'PlayStation 4',
     image: 'https://iili.io/fvtv041.png',
     versions: [
@@ -61,7 +61,7 @@ export const GAME_VERSIONS = [
   },
   {
     id: 'xbox',
-    name: 'Xbox Series X|S',
+    name: 'PS5, PS4, Xbox X|S / One',
     image: 'https://iili.io/fvtv041.png',
     versions: [
       {
