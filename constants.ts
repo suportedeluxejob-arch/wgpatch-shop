@@ -5,7 +5,7 @@
 // Imagens
 export const HERO_IMAGE_URL = "https://iili.io/fvtQ7jt.md.jpg"; 
 export const GAME_COVERS_URL = "https://iili.io/fvtv041.png";
-export const TEAMS_IMAGE_URL = "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=2070&auto=format&fit=crop";
+export const TEAMS_IMAGE_URL = "https://iili.io/fvpUFQs.md.png";
 export const PLAYERS_IMAGE_URL = "https://iili.io/fvtdt5u.md.png";
 
 // WhatsApp

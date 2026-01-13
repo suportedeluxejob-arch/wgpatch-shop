@@ -21,7 +21,7 @@ export const HowItWorks: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-slate-900 mb-3">1. Dados Atualizados</h3>
             <p className="text-slate-600 leading-relaxed">
-              Enviamos os dados dos elencos atualizados (maio/2025) diretamente para você.
+              Enviamos os dados dos elencos atualizados diretamente para você.
             </p>
           </div>
 
