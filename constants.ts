@@ -2,7 +2,7 @@
 // Since we are generating code, we use high-quality placeholders or instructions.
 
 // PLACEHOLDER: Substitua esta URL pela imagem do Neymar/EA FC fornecida (Imagem 1)
-export const HERO_IMAGE_URL = "https://iili.io/fvtgcNa.md.jpg"; 
+export const HERO_IMAGE_URL = "https://iili.io/fvtQ7jt.md.jpg"; 
 
 // PLACEHOLDER: Substitua esta URL pela imagem das capas (PS4/PS5/Xbox) que você enviou
 // Idealmente, faça upload da imagem das capas e cole o link aqui.
