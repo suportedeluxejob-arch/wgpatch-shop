@@ -38,7 +38,11 @@ export const Hero: React.FC = () => {
   };
 
   const handleCheckout = () => {
-    // Usa o link específico da versão selecionada
+    // 🎯 FLUXO INTELIGENTE:
+    // 1. Detecta qual versão está selecionada (EA FC 26 ou 25)
+    // 2. Pega o link de pagamento correto daquela versão
+    // 3. Redireciona o usuário para pagar aquele produto específico
+    
     const checkoutUrl = currentPrice.checkoutLink;
     window.location.href = checkoutUrl;
   };

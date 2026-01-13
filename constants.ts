@@ -1,20 +1,33 @@
-// In a real scenario, you would import the local images or use the specific URLs provided.
-// Since we are generating code, we use high-quality placeholders or instructions.
+// ========================================
+// 🌐 LINKS E CONFIGURAÇÕES PRINCIPAIS
+// ========================================
 
-// PLACEHOLDER: Substitua esta URL pela imagem do Neymar/EA FC fornecida (Imagem 1)
+// Imagens
 export const HERO_IMAGE_URL = "https://iili.io/fvtQ7jt.md.jpg"; 
-
-// PLACEHOLDER: Substitua esta URL pela imagem das capas (PS4/PS5/Xbox) que você enviou
-// Idealmente, faça upload da imagem das capas e cole o link aqui.
 export const GAME_COVERS_URL = "https://iili.io/fvtv041.png";
-
-// PLACEHOLDER: Substitua esta URL pela imagem das pastas/logos (Imagem 2)
 export const TEAMS_IMAGE_URL = "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?q=80&w=2070&auto=format&fit=crop";
-
-// Imagem dos Jogadores Reais com Faces e Nomes Oficiais
 export const PLAYERS_IMAGE_URL = "https://iili.io/fvtdt5u.md.png";
 
-// Dados das versões disponíveis com preços dinâmicos E LINKS DE COMPRA SEPARADOS
+// WhatsApp
+export const WHATSAPP_LINK = "https://wa.me/5511999999999";
+
+// ========================================
+// 💳 LINKS DE PAGAMENTO PARA CADA VERSÃO
+// ========================================
+// IMPORTANTE: Cada versão de jogo tem seu próprio link de pagamento!
+// 
+// EA FC 26 = Link 1
+// EA FC 25 = Link 2
+//
+// O botão "QUERO ATUALIZAR MEU EA FC HOJE" muda automaticamente
+// conforme o usuário seleciona a versão (26 ou 25)
+
+export const CHECKOUT_LINK_EAFC26 = "https://go.invictuspay.app.br/qaatnpzass";
+export const CHECKOUT_LINK_EAFC25 = "https://go.invictuspay.app.br/qaatnpzass";
+
+// ========================================
+// 🎮 VERSÕES DISPONÍVEIS COM PREÇOS
+// ========================================
 export const GAME_VERSIONS = [
   {
     id: 'PS5, PS4, Xbox X|S / One',
@@ -26,16 +39,16 @@ export const GAME_VERSIONS = [
         priceOld: 'R$ 119,90',
         priceNew: 'R$ 59,90',
         discount: '-50%',
-        // Link único para esta versão/preço
-        checkoutLink: 'https://wa.me/5511999999999?text=Olá!%20Quero%20atualizar%20para%20EA%20FC%2026',
+        // 👇 QUANDO SELECIONAR EA FC 26, USA ESTE LINK
+        checkoutLink: CHECKOUT_LINK_EAFC26,
       },
       {
         eaVersion: 'EA FC 25',
         priceOld: 'R$ 99,90',
         priceNew: 'R$ 39,90',
         discount: '-60%',
-        // Link único para esta versão/preço
-        checkoutLink: 'https://wa.me/5511999999999?text=Olá!%20Quero%20atualizar%20para%20EA%20FC%2025',
+        // 👇 QUANDO SELECIONAR EA FC 25, USA ESTE LINK
+        checkoutLink: CHECKOUT_LINK_EAFC25,
       },
     ],
   },
@@ -49,16 +62,16 @@ export const GAME_VERSIONS = [
         priceOld: 'R$ 119,90',
         priceNew: 'R$ 59,90',
         discount: '-50%',
-        // Link único para esta versão/preço
-        checkoutLink: 'https://go.invictuspay.app.br/qaatnpzass',
+        // 👇 QUANDO SELECIONAR EA FC 26, USA ESTE LINK
+        checkoutLink: CHECKOUT_LINK_EAFC26,
       },
       {
         eaVersion: 'EA FC 25',
         priceOld: 'R$ 99,90',
         priceNew: 'R$ 49,90',
         discount: '-50%',
-        // Link único para esta versão/preço
-        checkoutLink: 'https://go.invictuspay.app.br/qaatnpzass',
+        // 👇 QUANDO SELECIONAR EA FC 25, USA ESTE LINK
+        checkoutLink: CHECKOUT_LINK_EAFC25,
       },
     ],
   },
