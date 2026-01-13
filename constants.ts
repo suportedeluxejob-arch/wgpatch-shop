@@ -19,7 +19,7 @@ export const WHATSAPP_LINK = "https://wa.me/5511999999999"; // Exemplo
 // Link de redirecionamento do botão de checkout (edite aqui para alterar o destino)
 export const CHECKOUT_LINK = "https://wa.me/5511999999999?text=Olá!%20Quero%20atualizar%20meu%20EA%20FC%2026%20ou%2025";
 
-// Dados das versões disponíveis com preços dinâmicos
+// Dados das versões disponíveis com preços dinâmicos E LINKS DE COMPRA SEPARADOS
 export const GAME_VERSIONS = [
   {
     id: 'PS5, PS4, Xbox X|S / One',
@@ -31,12 +31,16 @@ export const GAME_VERSIONS = [
         priceOld: 'R$ 119,90',
         priceNew: 'R$ 59,90',
         discount: '-50%',
+        // Link único para esta versão/preço
+        checkoutLink: 'https://wa.me/5511999999999?text=Olá!%20Quero%20atualizar%20para%20EA%20FC%2026',
       },
       {
         eaVersion: 'EA FC 25',
         priceOld: 'R$ 99,90',
         priceNew: 'R$ 39,90',
         discount: '-60%',
+        // Link único para esta versão/preço
+        checkoutLink: 'https://wa.me/5511999999999?text=Olá!%20Quero%20atualizar%20para%20EA%20FC%2025',
       },
     ],
   },
@@ -50,12 +54,16 @@ export const GAME_VERSIONS = [
         priceOld: 'R$ 119,90',
         priceNew: 'R$ 59,90',
         discount: '-50%',
+        // Link único para esta versão/preço
+        checkoutLink: 'https://go.invictuspay.app.br/qaatnpzass',
       },
       {
         eaVersion: 'EA FC 25',
         priceOld: 'R$ 99,90',
-        priceNew: 'R$ 39,90',
-        discount: '-60%',
+        priceNew: 'R$ 49,90',
+        discount: '-50%',
+        // Link único para esta versão/preço
+        checkoutLink: 'https://go.invictuspay.app.br/qaatnpzass',
       },
     ],
   },

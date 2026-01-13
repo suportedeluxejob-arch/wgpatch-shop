@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { CheckCircle2, ShieldCheck, Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
-import { HERO_IMAGE_URL, GAME_VERSIONS, CHECKOUT_LINK } from '../constants';
+import { HERO_IMAGE_URL, GAME_VERSIONS } from '../constants';
 
 export const Hero: React.FC = () => {
   const [currentPlatformIndex, setCurrentPlatformIndex] = useState(0);
@@ -38,9 +38,9 @@ export const Hero: React.FC = () => {
   };
 
   const handleCheckout = () => {
-    const text = `Olá! Quero atualizar meu EA FC ${currentPrice.eaVersion} para ${currentPlatform.name}. Preço: ${currentPrice.priceNew}`;
-    const encodedText = encodeURIComponent(text);
-    window.location.href = `${CHECKOUT_LINK}&text=${encodedText}`;
+    // Usa o link específico da versão selecionada
+    const checkoutUrl = currentPrice.checkoutLink;
+    window.location.href = checkoutUrl;
   };
 
   return (
