@@ -48,7 +48,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative pt-8 pb-12 lg:pt-24 lg:pb-24 bg-gradient-to-br from-slate-50 to-blue-50/50 overflow-hidden">
+    <section className="relative pt-44 pb-12 lg:pt-32 lg:pb-24 bg-gradient-to-br from-slate-50 to-blue-50/50 overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
 
@@ -113,8 +113,8 @@ export const Hero: React.FC = () => {
                           setAutoPlay(false);
                         }}
                         className={`w-2 h-2 rounded-full transition-all duration-300 ${index === currentPlatformIndex
-                            ? 'bg-blue-600 w-6'
-                            : 'bg-white/60 hover:bg-white'
+                          ? 'bg-blue-600 w-6'
+                          : 'bg-white/60 hover:bg-white'
                           }`}
                       />
                     ))}
@@ -136,8 +136,8 @@ export const Hero: React.FC = () => {
                         setAutoPlay(false);
                       }}
                       className={`p-3 rounded-xl border-2 transition-all duration-200 text-left ${currentVersionIndex === index
-                          ? 'border-blue-600 bg-blue-50 shadow-md'
-                          : 'border-slate-200 bg-white hover:border-blue-300'
+                        ? 'border-blue-600 bg-blue-50 shadow-md'
+                        : 'border-slate-200 bg-white hover:border-blue-300'
                         }`}
                     >
                       <p className="text-sm font-bold text-slate-900">{version.eaVersion}</p>
