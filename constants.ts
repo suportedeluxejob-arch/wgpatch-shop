@@ -48,8 +48,8 @@ export const GAME_VERSIONS = [
       {
         eaVersion: 'EA FC 25',
         priceOld: 'R$ 99,90',
-        priceNew: 'R$ 39,90',
-        discount: '-60%',
+        priceNew: 'R$ 49,90',
+        discount: '-50%',
         // 👇 QUANDO SELECIONAR EA FC 25, USA ESTE LINK
         checkoutLink: CHECKOUT_LINK_EAFC25,
       },
