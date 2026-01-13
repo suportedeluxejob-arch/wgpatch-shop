@@ -5,6 +5,7 @@ import { HowItWorks } from './components/HowItWorks';
 import { Features } from './components/Features';
 import { TeamShowcase } from './components/TeamShowcase';
 import { Footer } from './components/Footer';
+import { WhatsAppSupport } from './components/WhatsAppSupport';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
       </main>
       
       <Footer />
+      
+      {/* Botão Flutuante de Suporte WhatsApp */}
+      <WhatsAppSupport />
     </div>
   );
 }

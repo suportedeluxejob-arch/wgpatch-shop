@@ -8,8 +8,9 @@ export const GAME_COVERS_URL = "https://iili.io/fvtv041.png";
 export const TEAMS_IMAGE_URL = "https://iili.io/fvpUFQs.md.png";
 export const PLAYERS_IMAGE_URL = "https://iili.io/fvtdt5u.md.png";
 
-// WhatsApp
-export const WHATSAPP_LINK = "https://wa.me/5511999999999";
+// WhatsApp - Suporte e Atendimento
+// Link com mensagem pré-definida para suporte
+export const WHATSAPP_SUPPORT_LINK = "https://api.whatsapp.com/send/?phone=5521960170781&text=Opa%2C+quero+saber+melhor+sobre+o+Patch+FIFA&type=phone_number&app_absent=0";
 
 // ========================================
 // 💳 LINKS DE PAGAMENTO PARA CADA VERSÃO
