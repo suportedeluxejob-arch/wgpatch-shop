@@ -13,12 +13,9 @@ function App() {
       <nav className="absolute top-0 w-full z-50 p-6">
         <div className="container mx-auto flex justify-between items-center">
           <div className="text-xl font-black text-slate-900 tracking-tighter">
-            PATCH<span className="text-blue-600">DE</span>TIMES
+            WG<span className="text-blue-600"> PATCH</span>
           </div>
           {/* Mobile hidden for simplicity, or simple link */}
-          <a href="#pricing" className="hidden md:block font-bold text-slate-700 hover:text-blue-600 transition">
-            Comprar Agora
-          </a>
         </div>
       </nav>
       
