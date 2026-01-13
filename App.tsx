@@ -19,7 +19,7 @@ function App() {
             <img
               src={LOGO_URL}
               alt="WG PATCH Logo"
-              className="h-13 w-13 object-cover rounded-full shadow-lg border-2 border-white mb-2"
+              className="h-14 w-13 object-cover rounded-full shadow-lg border-2 border-white mb-2"
             />
             <div className="text-xl font-black text-slate-900 tracking-tighter">
               WG<span className="text-cyan-500"> PATCH</span>

@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
           <img
             src={LOGO_URL}
             alt="WG PATCH Logo"
-            className="h-13 w-13 object-cover rounded-full shadow-xl border-4 border-slate-800 mb-4 hover:scale-105 transition-transform duration-300"
+            className="h-14 w-13 object-cover rounded-full shadow-xl border-4 border-slate-800 mb-4 hover:scale-105 transition-transform duration-300"
           />
 
           {/* Nome WG PATCH */}
