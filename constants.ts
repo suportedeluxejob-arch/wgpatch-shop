@@ -13,6 +13,13 @@ export const TEAMS_IMAGE_URL = "https://iili.io/fvpUFQs.md.png";
 export const PLAYERS_IMAGE_URL = "https://iili.io/fvtdt5u.md.png";
 
 // ========================================
+// 🎥 VÍDEO VSL (EDITÁVEL VIA LINK)
+// ========================================
+// URL do vídeo YouTube (VSL - Video Sales Letter)
+// Substitua pela URL do seu vídeo
+export const VSL_VIDEO_URL = "https://www.youtube.com/embed/ZWNlAOrcqoY?autoplay=0&rel=0&modestbranding=1";
+
+// ========================================
 // 👥 FEEDBACKS DE CLIENTES (EDITÁVEL VIA LINKS)
 // ========================================
 export const CLIENT_FEEDBACKS = [
@@ -26,11 +33,11 @@ export const CLIENT_FEEDBACKS = [
   },
   {
     id: 3,
-    image: "https://via.placeholder.com/400x500?text=Feedback+3",
+    image: "https://iili.io/fvy0UWF.md.jpg",
   },
   {
     id: 4,
-    image: "https://via.placeholder.com/400x500?text=Feedback+4",
+    image: "https://iili.io/fvy0Sx1.md.jpg",
   },
 ];
 
