@@ -4,6 +4,7 @@ import { VslSection } from './components/VslSection';
 import { HowItWorks } from './components/HowItWorks';
 import { Features } from './components/Features';
 import { TeamShowcase } from './components/TeamShowcase';
+import { CheckoutCarousel } from './components/CheckoutCarousel';
 import { Pricing } from './components/Pricing';
 import { Footer } from './components/Footer';
 
@@ -24,6 +25,7 @@ function App() {
         <VslSection />
         <Features />
         <TeamShowcase />
+        <CheckoutCarousel />
         <HowItWorks />
         <Pricing />
       </main>
