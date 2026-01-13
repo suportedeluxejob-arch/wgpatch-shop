@@ -12,6 +12,28 @@ export const GAME_COVERS_URL = "https://iili.io/fvtv041.png";
 export const TEAMS_IMAGE_URL = "https://iili.io/fvpUFQs.md.png";
 export const PLAYERS_IMAGE_URL = "https://iili.io/fvtdt5u.md.png";
 
+// ========================================
+// 👥 FEEDBACKS DE CLIENTES (EDITÁVEL VIA LINKS)
+// ========================================
+export const CLIENT_FEEDBACKS = [
+  {
+    id: 1,
+    image: "https://iili.io/fvy0kOB.md.jpg",
+  },
+  {
+    id: 2,
+    image: "https://iili.io/fvy0vDP.md.jpg",
+  },
+  {
+    id: 3,
+    image: "https://via.placeholder.com/400x500?text=Feedback+3",
+  },
+  {
+    id: 4,
+    image: "https://via.placeholder.com/400x500?text=Feedback+4",
+  },
+];
+
 // WhatsApp - Suporte e Atendimento
 // Link com mensagem pré-definida para suporte
 export const WHATSAPP_SUPPORT_LINK = "https://api.whatsapp.com/send/?phone=5521960170781&text=Opa%2C+quero+saber+melhor+sobre+o+Patch+FIFA&type=phone_number&app_absent=0";

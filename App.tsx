@@ -4,6 +4,7 @@ import { VslSection } from './components/VslSection';
 import { HowItWorks } from './components/HowItWorks';
 import { Features } from './components/Features';
 import { TeamShowcase } from './components/TeamShowcase';
+import { ClientFeedback } from './components/ClientFeedback';
 import { Footer } from './components/Footer';
 import { WhatsAppSupport } from './components/WhatsAppSupport';
 import { LOGO_URL } from './constants';
@@ -32,6 +33,7 @@ function App() {
         <VslSection />
         <Features />
         <TeamShowcase />
+        <ClientFeedback />
         <HowItWorks />
       </main>
       
