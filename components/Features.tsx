@@ -7,17 +7,17 @@ export const Features: React.FC = () => {
     <section className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Image Side - Players with Real Faces and Official Names */}
           <div className="order-2 lg:order-1 relative">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-blue-600/5 rounded-full blur-3xl -z-10"></div>
-            <img 
+            <img
               src={PLAYERS_IMAGE_URL}
-              alt="Jogue com Jogadores Reais - Faces e Nomes Oficiais" 
+              alt="Jogue com Jogadores Reais - Faces e Nomes Oficiais"
               className="relative rounded-2xl shadow-2xl rotate-1 hover:rotate-0 transition-transform duration-500 border border-slate-100 w-full h-auto"
             />
             {/* Overlay Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl border border-slate-100 max-w-[220px] hidden md:block">
+            <div className="relative mt-6 md:mt-0 md:absolute md:-bottom-6 md:-right-6 bg-white p-4 rounded-xl shadow-xl border border-slate-100 w-full md:max-w-[220px]">
               <div className="flex items-center gap-2 mb-2">
                 <Trophy className="w-5 h-5 text-yellow-500" />
                 <span className="font-bold text-slate-800">Licenciado Oficial</span>

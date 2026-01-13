@@ -8,10 +8,10 @@ export const Footer: React.FC = () => {
         {/* Logo e Nome Centralizados */}
         <div className="flex flex-col items-center mb-12">
           {/* Logo */}
-          <img 
-            src={LOGO_URL} 
-            alt="WG PATCH Logo" 
-            className="h-24 w-auto object-contain mb-4 hover:scale-105 transition-transform duration-300"
+          <img
+            src={LOGO_URL}
+            alt="WG PATCH Logo"
+            className="h-24 w-24 object-cover rounded-full shadow-xl border-4 border-slate-800 mb-4 hover:scale-105 transition-transform duration-300"
           />
 
           {/* Nome WG PATCH */}
