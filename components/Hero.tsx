@@ -191,7 +191,7 @@ export const Hero: React.FC = () => {
             </div>
 
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white w-full aspect-[4/5] sm:aspect-[4/5.5]">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white w-full min-h-[400px] sm:min-h-[500px]">
               {HERO_CAROUSEL_IMAGES.map((img, index) => (
                 <img
                   key={index}
