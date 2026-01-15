@@ -1,23 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { CheckCircle2, ShieldCheck, Trophy, ChevronLeft, ChevronRight } from 'lucide-react';
-import { HERO_IMAGE_URL, GAME_VERSIONS } from '../constants';
+import { HERO_IMAGE_URL, GAME_VERSIONS, HERO_CAROUSEL_IMAGES } from '../constants';
 
 export const Hero: React.FC = () => {
   const [currentPlatformIndex, setCurrentPlatformIndex] = useState(0);
   const [currentVersionIndex, setCurrentVersionIndex] = useState(0);
+  const [currentHeroImageIndex, setCurrentHeroImageIndex] = useState(0);
   const [autoPlay, setAutoPlay] = useState(true);
 
   const currentPlatform = GAME_VERSIONS[currentPlatformIndex];
   const currentPrice = currentPlatform.versions[currentVersionIndex];
 
-  // Auto-play carousel
+  // Auto-play carousels
   useEffect(() => {
     if (!autoPlay) return;
 
     const interval = setInterval(() => {
+      // Rotate version cards
       setCurrentPlatformIndex((prev) => (prev + 1) % GAME_VERSIONS.length);
       setCurrentVersionIndex(0);
+
+      // Rotate Hero Images
+      setCurrentHeroImageIndex((prev) => (prev + 1) % HERO_CAROUSEL_IMAGES.length);
     }, 5000);
 
     return () => clearInterval(interval);
@@ -57,6 +62,17 @@ export const Hero: React.FC = () => {
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-6">
               <ShieldCheck className="w-4 h-4 mr-2" />
               100% Seguro e Atualizado
+            </div>
+
+            {/* Headline Apelativa */}
+            <div className="mb-6">
+              <span className="bg-red-600 text-white px-4 py-1.5 rounded-lg text-sm font-black uppercase tracking-widest animate-pulse inline-block mb-3">
+                ⚠️ ATENÇÃO
+              </span>
+              <h2 className="text-2xl sm:text-4xl font-black text-slate-900 leading-tight">
+                O PATCH MAIS COMPLETO E REALISTA <br className="hidden sm:block" />
+                <span className="text-blue-600">DO MERCADO ESTÁ AQUI!</span>
+              </h2>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight mb-6">
@@ -174,12 +190,31 @@ export const Hero: React.FC = () => {
           {/* Image Content - Hero Image */}
           <div className="relative group block mt-12 lg:mt-0 max-w-xs mx-auto lg:max-w-full">
             <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white">
-              <img
-                src={HERO_IMAGE_URL}
-                alt="Banner EA FC"
-                className="w-full h-auto object-cover transform transition hover:scale-105 duration-700"
-              />
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white bg-white aspect-[4/5] sm:aspect-auto">
+              {HERO_CAROUSEL_IMAGES.map((img, index) => (
+                <img
+                  key={index}
+                  src={img}
+                  alt={`Banner EA FC ${index + 1}`}
+                  className={`absolute inset-0 w-full h-full object-cover transform transition-all duration-1000 ease-in-out ${index === currentHeroImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-110 pointer-events-none'
+                    }`}
+                />
+              ))}
+
+              {/* Navigation Indicators for Hero Carousel */}
+              <div className="absolute bottom-4 left-4 flex gap-1 z-20">
+                {HERO_CAROUSEL_IMAGES.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      setCurrentHeroImageIndex(index);
+                      setAutoPlay(false);
+                    }}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${index === currentHeroImageIndex ? 'bg-white w-8' : 'bg-white/40 w-4 hover:bg-white/60'
+                      }`}
+                  />
+                ))}
+              </div>
 
               <div className="absolute bottom-4 right-4 bg-white/95 backdrop-blur shadow-lg p-3 rounded-xl flex items-center gap-3">
                 <div className="bg-yellow-100 p-2 rounded-full text-yellow-600">

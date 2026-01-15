@@ -8,6 +8,12 @@ export const LOGO_URL = "https://iili.io/f8WlKIj.png";
 
 // Imagens
 export const HERO_IMAGE_URL = "https://iili.io/fvtQ7jt.md.jpg";
+export const HERO_CAROUSEL_IMAGES = [
+  "https://iili.io/fvtQ7jt.md.jpg",
+  "https://iili.io/fvbfWF4.jpg",
+  "https://iili.io/fvbMDlf.md.png",
+  "https://iili.io/fvpUFQs.md.png"
+];
 export const GAME_COVERS_URL = "https://iili.io/fvtv041.png";
 export const TEAMS_IMAGE_URL = "https://iili.io/fvpUFQs.md.png";
 export const PLAYERS_IMAGE_URL = "https://iili.io/fvtdt5u.md.png";
