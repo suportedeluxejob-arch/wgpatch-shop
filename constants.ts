@@ -13,9 +13,9 @@ export const LOGO_URL = "https://iili.io/f8WlKIj.png";
 // A primeira imagem da lista será a que aparece primeiro.
 export const HERO_CAROUSEL_IMAGES = [
   "https://iili.io/fSFt95X.md.jpg",
-  "https://iili.io/fSFZyJt.jpg",
-  "https://iili.io/fSFt2zG.md.jpg", // <--- Recuperei este link único que você enviou antes
-  "https://iili.io/fSFtJbs.md.jpg"  // <--- Recuperei este link único que você enviou antes
+  "",
+  "", // <--- Recuperei este link único que você enviou antes
+  "h"  // <--- Recuperei este link único que você enviou antes
 ];
 
 // Imagem fixa (fallback se necessário)
