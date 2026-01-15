@@ -211,7 +211,7 @@ export const Hero: React.FC = () => {
                       setCurrentHeroImageIndex(index);
                       setAutoPlay(false);
                     }}
-                    className={`h-1.5 rounded-full transition-all duration-300 ${index === currentHeroImageIndex ? 'bg-white w-8' : 'bg-white/40 w-4 hover:bg-white/60'
+                    className={`h-2.5 rounded-full transition-all duration-300 border-2 border-black/20 ${index === currentHeroImageIndex ? 'bg-blue-600 w-10' : 'bg-white w-5 hover:bg-slate-100'
                       }`}
                   />
                 ))}
